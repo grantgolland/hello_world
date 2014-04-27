@@ -8,8 +8,8 @@ Dotenv.load
 twitter = Twitter::REST::Client.new do |config|
   config.consumer_key = ENV['C_KEY']
   config.consumer_secret = ENV['C_SECRET']
-  config.oauth_token = ENV['OAUTH_TOKEN']
-  config.oauth_token_secret = ENV['TOKEN_SECRET']
+  config.access_token = ENV['OAUTH_TOKEN']
+  config.access_token_secret = ENV['TOKEN_SECRET']
 end
 
 search_term = URI::encode('#todayilearned')
